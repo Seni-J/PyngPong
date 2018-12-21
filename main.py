@@ -2,9 +2,11 @@ import pygame, sys
 from pygame.locals import *
 
 
-width = 640
+width = 800
 height = width / 16 * 9
-fps = 30
+fps = 60
+linethickness = 10
+
 screen = pygame.display.set_mode((width, int(height)))
 
 timer = pygame.time.Clock()
@@ -23,8 +25,15 @@ AI_score = 0
 black = (0, 0, 0)
 white = (255, 255, 255)
 
+def drawArena():
+    
+
+
+#Run the game
 def main():
     pygame.init()
+    global DISPLAYSURF
+
     pygame.display.set_caption('Pyng Pong')
 
     while True:
